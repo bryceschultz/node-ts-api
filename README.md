@@ -1,4 +1,4 @@
-# node-ts-backend
+# node-ts-api
 
 ## install dependencies
 
