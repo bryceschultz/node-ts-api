@@ -3,7 +3,7 @@ module.exports = {
         "es2021": true,
         "node": true
     },
-    "extends": "standard-with-typescript",
+    "extends": ["standard-with-typescript", "prettier"],
     "overrides": [
         {
             "env": {
@@ -21,6 +21,7 @@ module.exports = {
         "ecmaVersion": "latest",
         "sourceType": "module"
     },
+    "ignorePatterns": ['.eslintrc.js'],
     "rules": {
     }
 }
