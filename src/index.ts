@@ -12,7 +12,6 @@ app.get("/", (req: Request, res: Response) => {
   res.send("Express + TypeScript Server");
 });
 
-
 app.all('/api/user/*', userRoutes)
 app.all('/api/models*', modelRoutes)
 
