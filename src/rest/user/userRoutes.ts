@@ -6,7 +6,7 @@ const userRoutes: Router = express.Router();
 
 userRoutes.get("/api/user/currentUser", (req: Request, res: Response) => {
     const user: User = getUser();
-    res.send("current user: " + JSON.stringify(user));
+    res.send(JSON.stringify(user));
 });
 
 export default userRoutes;

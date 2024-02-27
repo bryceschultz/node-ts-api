@@ -6,7 +6,7 @@ const modelRoutes: Router = express.Router();
 
 modelRoutes.get("/api/models", (req: Request, res: Response) => {
     const models: Array<Model> = getAllModels();
-    res.send("all models: " + JSON.stringify(models));
+    res.send(JSON.stringify(models));
 });
 
 export default modelRoutes;
